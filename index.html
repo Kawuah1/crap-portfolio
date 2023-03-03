@@ -1,10 +1,93 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
 
-  </body>
-</html>
+<head>
+  <style>
+
+    header {
+      background: url("https://images.unsplash.com/photo-1519638157102-4da934548801?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGRhcmslMjBzY2VuZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=900&q=60.png");
+      text-align: center;
+      background-size: cover;
+      color: white;
+    }
+
+    img {
+    border-radius: 100px;
+    border:10px solid white;
+    margin: 35px 0px 0px 0px;
+    }
+
+    ul{
+      padding: 10px;
+      background: rgba(0,0,0,0.5);
+    }
+
+    li {
+      display: inline;
+      padding: 0px 10px 0px 10px;
+      font-family: verdana;
+    }
+
+    h1 {
+      font-size: 45;
+    }
+
+    p {
+    text-align: justify
+    }
+
+    button {
+    font-family: verdana;
+    }
+
+     article {
+      max-width: 500px;
+      padding: 20px;
+      margin: 0 auto;
+     }
+
+    @media (max-width: 500px) {
+      h1{
+        font-size: 35px
+      }
+      ul {
+        background: rgba(0,0,0,0.4);
+      }
+      li {
+         display: block;
+         padding: 4px;
+      }
+    }
+
+  </style>
+</head>
+
+
+<body>
+  <header>
+    <img src="https://www.naturaldiamonds.com/wp-content/uploads/2021/05/HPC_CEL_Then-and-Wow_Michael-B-Jordan_Fruitvale-Station-Premiere_IMG_4x5.jpg" width= "200">
+
+    <h1>Michael's Blog</h1>
+    <ul>
+      <button><li><a href="https://en.wikipedia.org/wiki/Michael_B._Jordan">About me</a></li></button>
+      <button><li><a href="https://www.imdb.com/name/nm0430107/">Resume</a></li></button>
+      <button><li><a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjRsc3P3az8AhUHkXIEHVxnB_kQFnoECBMQAQ&url=https%3A%2F%2Fwww.instagram.com%2Fmichaelbjordan%2F%3Fhl%3Den&usg=AOvVaw1fo2K3O3E6eJTegAaa6H2V">Social Media</a></li></button>
+     <button><li><a href="https://www.youtube.com/watch?v=AHmCH7iB_IM">Upcoming Movie</a></li></button>
+    </ul>
+  </header>
+  <article>
+    <h2>Here is a synopsis of some movies acted by Michael B. Jordan</h2>
+    <h3>Without Remorse</h3>
+    <p>Seeking justice for the murder of his pregnant wife, an elite Navy SEAL uncovers a covert plot that threatens to engulf the United States and Russia in an all-out war.</p><button>Like</button><button>Dislike</button>
+    <h3>Creed</h3>
+    <p>Adonis Johnson (Michael B. Jordan) never knew his famous father, boxing champion Apollo Creed, who died before Adonis was born. However, boxing is in his blood, so he seeks out Rocky Balboa (Sylvester Stallone) and asks the retired champ to be his trainer. Rocky sees much of Apollo in Adonis, and agrees to mentor him, even as he battles an opponent deadlier than any in the ring. With Rocky's help, Adonis soon gets a title shot, but whether he has the true heart of a fighter remains to be seen.</p><button>Like</button><button>Dislike</button>
+    <h3>Black Panther</h3>
+    <p>After the death of his father, T'Challa returns home to the African nation of Wakanda to take his rightful place as king. When a powerful enemy suddenly reappears, T'Challa's mettle as king -- and as Black Panther -- gets tested when he's drawn into a conflict that puts the fate of Wakanda and the entire world at risk. Faced with treachery and danger, the young king must rally his allies and release the full power of Black Panther to defeat his foes and secure the safety of his people.</p><button>Like </button><button>Dislike</button>
+  </article>
+  <script>
+    alert("Javascript works!")
+
+    $("button").on("click", function() {
+      alert("clicked!")
+    })
+  </script>
+</body>
